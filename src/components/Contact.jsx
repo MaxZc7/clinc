@@ -1,7 +1,5 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   return (
@@ -17,7 +15,6 @@ function Contact() {
           <h3 className="text-4xl p-2 text-green-900">Contacto</h3>
           <p>011 4523-7783</p>
           <div className="hover:text-green-600 m-1 text-green-900">
-            <FontAwesomeIcon icon={faWhatsapp} />
             <a
               className="text-lg m-1 "
               href="https://web.whatsapp.com/"
@@ -33,6 +30,16 @@ function Contact() {
           <p>Fuasto Lombardo</p>
           <p className="py-1">Pascual torres</p>
           <p>Adriana zarata</p>
+        </div>
+      </div>
+      <hr></hr>
+      <div className="flex flex-col md:flex-row justify-between font-light m-auto max-w-[1000px]  ">
+        <div>
+          <p className="m-3">Copyright © 2023 Max Zar. All Rights Reserved.</p>
+        </div>
+        <div className="flex ">
+          <p className="m-3">Terms of use</p>{" "}
+          <p className="m-3">Privacy policy</p>
         </div>
       </div>
     </div>

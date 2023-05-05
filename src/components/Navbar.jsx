@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [nav, setNav] = useState(true);
@@ -15,18 +16,48 @@ function Navbar() {
         <img src={logo} className="w-[80%] md:w-[28%] p-2 "></img>
 
         <ul className="hidden md:flex p-4 ">
-          <a className=" text-xl px-1 font-bold">Turnos online </a>
-          <p className=" text-lg px-1">011 4627-8822</p>
-
-          <a href="#About" className="px-4 text-xl font-semibold">
+          <Link
+            to="hero"
+            spy={true}
+            offset={50}
+            smooth={true}
+            duration={650}
+            className="px-4 text-xl font-semibold hover:text-green-800 cursor-pointer"
+          >
+            Turnos online
+          </Link>
+          <p className=" text-lg px-1 md:mr-12">011 4627-8822</p>
+          <Link
+            to="About"
+            spy={true}
+            offset={50}
+            smooth={true}
+            duration={650}
+            className="px-4 text-xl font-semibold hover:text-green-800 cursor-pointer"
+          >
             Sobre Nosotros
-          </a>
-          <a href="#Centros" className="px-4 text-xl font-semibold">
+          </Link>
+
+          <Link
+            to="Centros"
+            spy={true}
+            offset={50}
+            smooth={true}
+            duration={650}
+            className="px-4 text-xl font-semibold hover:text-green-800 cursor-pointer"
+          >
             Centros médicos
-          </a>
-          <a href="#Contact" className="px-4 text-xl font-semibold">
+          </Link>
+          <Link
+            to="Contact"
+            spy={true}
+            offset={50}
+            smooth={true}
+            duration={650}
+            className="px-4 text-xl font-semibold hover:text-green-800 cursor-pointer"
+          >
             Contáctenos
-          </a>
+          </Link>
         </ul>
 
         <div className="md:hidden">
@@ -52,27 +83,48 @@ function Navbar() {
           >
             <ul className="flex flex-col p-4 mt-10">
               <div className="p-4  border-b border-gray-400 text-gray-800 ">
-                <a className=" text-xl px-1 font-bold">Turnos online </a>
+                <Link
+                  to="hero"
+                  spy={true}
+                  offset={50}
+                  smooth={true}
+                  duration={650}
+                  className=" text-xl px-1 font-bold cursor-pointer  "
+                >
+                  Turnos online
+                </Link>
                 <p className=" text-lg px-1">011 4627-8822</p>
               </div>
-              <a
-                href="#About"
-                className="text-xl font-semibold p-4 border-b border-gray-400 text-gray-500  "
+              <Link
+                to="About"
+                spy={true}
+                offset={50}
+                smooth={true}
+                duration={650}
+                className="text-xl font-semibold p-4 border-b border-gray-400 text-gray-500 cursor-pointer   "
               >
                 Sobre Nosotros
-              </a>
-              <a
-                href="#Centros"
-                className=" text-xl font-semibold p-4 border-b border-gray-400 text-gray-500  "
+              </Link>
+              <Link
+                to="Centros"
+                spy={true}
+                offset={50}
+                smooth={true}
+                duration={650}
+                className=" text-xl font-semibold p-4 border-b border-gray-400 text-gray-500 cursor-pointer   "
               >
                 Centros médicos
-              </a>
-              <a
-                href="#Contact"
-                className=" text-xl font-semibold p-4 border-b border-gray-400 text-gray-500  "
+              </Link>
+              <Link
+                to="Contact"
+                spy={true}
+                offset={50}
+                smooth={true}
+                duration={650}
+                className=" text-xl font-semibold p-4 border-b border-gray-400 text-gray-500  cursor-pointer  "
               >
                 Contáctenos
-              </a>
+              </Link>
             </ul>
           </div>
         </div>

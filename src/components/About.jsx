@@ -3,9 +3,11 @@ import about from "../assets/about.jpg";
 
 function About() {
   return (
-    <div className="w-full md:h-[80vh] h-[83vh]">
+    <div className="w-full md:h-[80vh] ">
       <div className="flex justify-center ">
-        <h1 className="text-3xl font-bold mb-5 border-b border-black">Sobre nosotros</h1>
+        <h1 className="text-3xl font-bold mb-5 border-b border-black">
+          Sobre nosotros
+        </h1>
       </div>
       <div className="flex items-center gap-3 justify-center mt-4">
         <h1 className="text-xl font-light text-gray-600 text-center max-w-[1000px] md:px-0 px-5">
